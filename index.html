@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music</title>
+  <link rel="shortcut icon" href="./images/Spotify_favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <!-- part 1 (left) -->
+    <div class="menu_side">
+      <h1>Playlist</h1>
+      <div class="playlist">
+        <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+        <h4><span></span><i class="bi bi-music-note-beamed"></i>Last Listening</h4>
+        <h4><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
+      </div>
+      <div class="manu_song">
+        <li class="songItem">
+          <span>01</span>
+          <img src="img/1.jpg" alt="">
+          <h5>Alone<br>
+            <div class="subtitle">Marshmello</div>
+          </h5>
+          <i class="bi bi-play-circle-fill playListPlay" id="1"></i>
+        </li>
+        <li class="songItem">
+          <span>02</span>
+          <img src="img/1.jpg" alt="">
+          <h5>Alone<br>
+            <div class="subtitle">Marshmello</div>
+          </h5>
+          <i class="bi bi-play-circle-fill playListPlay" id="2"></i>
+        </li>
+        <li class="songItem">
+          <span>03</span>
+          <img src="img/1.jpg" alt="">
+          <h5>Alone<br>
+            <div class="subtitle">Marshmello</div>
+          </h5>
+          <i class="bi bi-play-circle-fill playListPlay" id="3"></i>
+        </li>
+        <li class="songItem">
+          <span>04</span>
+          <img src="img/1.jpg" alt="">
+          <h5>Alone<br>
+            <div class="subtitle">Marshmello</div>
+          </h5>
+          <i class="bi bi-play-circle-fill playListPlay" id="4"></i>
+        </li>
+        <li class="songItem">
+          <span>05</span>
+          <img src="img/1.jpg" alt="">
+          <h5>Alone<br>
+            <div class="subtitle">Marshmello</div>
+          </h5>
+          <i class="bi bi-play-circle-fill playListPlay" id="5"></i>
+        </li>
+        <li class="songItem">
+          <span>06</span>
+          <img src="img/1.jpg" alt="">
+          <h5>Alone<br>
+            <div class="subtitle">Marshmello</div>
+          </h5>
+          <i class="bi bi-play-circle-fill playListPlay" id="6"></i>
+        </li>
+        <li class="songItem">
+          <span>07</span>
+          <img src="img/1.jpg" alt="">
+          <h5>Alone<br>
+            <div class="subtitle">Marshmello</div>
+          </h5>
+          <i class="bi bi-play-circle-fill playListPlay" id="7"></i>
+        </li>
+        <li class="songItem">
+          <span>08</span>
+          <img src="img/1.jpg" alt="">
+          <h5>Alone<br>
+            <div class="subtitle">Marshmello</div>
+          </h5>
+          <i class="bi bi-play-circle-fill playListPlay" id="8"></i>
+        </li>
+      </div>
+    </div>
+    <!-- part 2 (right) -->
+    <div class="song_side">
+      <nav>
+        <ul>
+          <li>Discover <span></span></li>
+          <li>MY LIBRARY</li>
+          <li>RADIO</li>
+        </ul>
+        <div class="search">
+          <i class="bi bi-search"></i>
+          <input type="text" placeholder="Search Music..." id="searchSong">
+          <div class="search_results">
+          </div>
+        </div>
+        <div class="user" id="user">
+          <img src="img/user-2.jpg" alt="user">
+        </div>
+
+        <div class="userInfo" id="userInfo">
+          <div class="person">
+            <img src="img/user-2.jpg">
+            <h3>Tony Stark</h3>
+            <h4>devendra04@gamil.com</h4>
+            <div>
+              <i class="bi bi-key-fill"></i>
+              <i class="bi bi-geo-alt-fill"></i>
+              <i class="bi bi-gear-fill"></i>
+            </div>
+            <button>Logout</button>
+          </div>
+          <hr>
+          <div class="otherPerson">
+            <a href="loginHTML.html"><button id="loginBtn">Login</button></a>
+            <a href="signUp.html"><button id="signupBtn">SignUp</button></a>
+          </div>
+        </div>
+
+      </nav>
+      <div class="content">
+        <h1>Ed Sheeran</h1>
+        <p>You were the shadow to my light did you feel us Another start you fade<br> Away afraid our aim is out of
+          signt Wanna see us Ed Sheeran</p>
+        <div class="buttons">
+          <button>PLAY</button>
+          <button>FOLLOW</button>
+        </div>
+      </div>
+
+      <div class="popular_song">
+        <div class="h4">
+          <h4 style="color: #fff">Popular Song</h4>
+          <div class="btn_s">
+            <i class="bi bi-arrow-left" id="pop_song_left"></i>
+            <i class="bi bi-arrow-right" id="pop_song_right"></i>
+          </div>
+        </div>
+        <div class="pop_song" id="pop_song">
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/1.jpg" alt="">
+              <i class="bi bi-play-circle-fill playListPlay" id="9"></i>
+            </div>
+            <h5>Alone <br>
+              <div class="subtitle">Marshmello</div>
+            </h5>
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/1.jpg" alt="">
+              <i class="bi bi-play-circle-fill playListPlay" id="10"></i>
+            </div>
+            <h5>Alone <br>
+              <div class="subtitle">Marshmello</div>
+            </h5>
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/1.jpg" alt="">
+              <i class="bi bi-play-circle-fill playListPlay" id="11"></i>
+            </div>
+            <h5>Alone <br>
+              <div class="subtitle">Marshmello</div>
+            </h5>
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/1.jpg" alt="">
+              <i class="bi bi-play-circle-fill playListPlay" id="12"></i>
+            </div>
+            <h5>Alone <br>
+              <div class="subtitle">Marshmello</div>
+            </h5>
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/1.jpg" alt="">
+              <i class="bi bi-play-circle-fill playListPlay" id="13"></i>
+            </div>
+            <h5>Alone <br>
+              <div class="subtitle">Marshmello</div>
+            </h5>
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/1.jpg" alt="">
+              <i class="bi bi-play-circle-fill playListPlay" id="14"></i>
+            </div>
+            <h5>Alone <br>
+              <div class="subtitle">Marshmello</div>
+            </h5>
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/1.jpg" alt="">
+              <i class="bi bi-play-circle-fill playListPlay" id="15"></i>
+            </div>
+            <h5>Alone <br>
+              <div class="subtitle">Marshmello</div>
+            </h5>
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/1.jpg" alt="">
+              <i class="bi bi-play-circle-fill playListPlay" id="16"></i>
+            </div>
+            <h5>Alone <br>
+              <div class="subtitle">Marshmello</div>
+            </h5>
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/1.jpg" alt="">
+              <i class="bi bi-play-circle-fill playListPlay" id="17"></i>
+            </div>
+            <h5>Alone <br>
+              <div class="subtitle">Marshmello</div>
+            </h5>
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/1.jpg" alt="">
+              <i class="bi bi-play-circle-fill playListPlay" id="18"></i>
+            </div>
+            <h5>Alone <br>
+              <div class="subtitle">Marshmello</div>
+            </h5>
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/1.jpg" alt="">
+              <i class="bi bi-play-circle-fill playListPlay" id="19"></i>
+            </div>
+            <h5>Alone <br>
+              <div class="subtitle">Marshmello</div>
+            </h5>
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/1.jpg" alt="">
+              <i class="bi bi-play-circle-fill playListPlay" id="20"></i>
+            </div>
+            <h5>Alone <br>
+              <div class="subtitle">Marshmello</div>
+            </h5>
+          </li>
+        </div>
+
+
+
+      </div>
+
+      <div class="popular_artists">
+        <div class="h4">
+          <h4 style="color: #fff">Popular Artists</h4>
+          <div class="btn_s">
+            <i class="bi bi-arrow-left" id="pop_art_left"></i>
+            <i class="bi bi-arrow-right" id="pop_art_right"></i>
+          </div>
+        </div>
+        <div class="item" id="item">
+          <li>
+            <a href="marshmello.html"><img src="img/artist-1.jpg" alt=""></a>
+          </li>
+          <li>
+            <img src="img/artist-2.jpg" alt="">
+          </li>
+          <li>
+            <img src="img/artist-3.jpg" alt="">
+          </li>
+          <li>
+            <img src="img/artist-4.jpg" alt="">
+          </li>
+          <li>
+            <img src="img/artist-5.jpg" alt="">
+          </li>
+          <li>
+            <img src="img/artist-6.webp" alt="">
+          </li>
+          <li>
+            <img src="img/artist-7.webp" alt="">
+          </li>
+          <li>
+            <img src="img/artist-8.jpg" alt="">
+          </li>
+          <li>
+            <img src="img/artist-9.jpg" alt="">
+          </li>
+          <li>
+            <img src="img/artist-10.jpg" alt="">
+          </li>
+          <li>
+            <img src="img/artist-11.jpg" alt="">
+          </li>
+        </div>
+
+      </div>
+
+      <!-- other -->
+
+      <!-- other-1 cards -->
+      <div class="main-container">
+        <div class="spotify-playlists">
+          <h2>Spotify Playlists</h2>
+
+          <div class="list">
+            <div class="item">
+              <img src="./images/Today's Top Hits.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>Today's Top Hits</h4>
+              <p>Olivia Rodrigo is on top of the Hottest 50!</p>
+            </div>
+
+            <div class="item">
+              <img src="./images/RapCaviar.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>RapCaviar</h4>
+              <p>New Music from Cardi B, Megan Thee Stallion an...</p>
+            </div>
+
+            <div class="item">
+              <img src="./images/Chill Hits.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>Chill Hits</h4>
+              <p>Kick back to the best new and recent chill hits</p>
+            </div>
+
+            <div class="item">
+              <img src="./images/All Out 2010s.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>All out 2010s</h4>
+              <p>The biggest spmgs pf tje 2010s.</p>
+            </div>
+
+            <div class="item">
+              <img src="./images/Rock Classics.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>Rock Classics</h4>
+              <p>Rock Legends & epic songs that continue to...</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="spotify-playlists">
+          <h2>Focus</h2>
+          <div class="list">
+
+            <div class="item">
+              <img src="./images/Instrumental Study.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>Instrumental Study</h4>
+              <p>Focus with soft study music in the background.</p>
+            </div>
+
+            <div class="item">
+              <img src="./images/Deep Focus.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>Deep Focus</h4>
+              <p>Keep calm and focus with ambient and post-...</p>
+            </div>
+
+            <div class="item">
+              <img src="./images/Focus Flow.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>Focus Flow</h4>
+              <p>Uptempo instrumental hip hop beats</p>
+            </div>
+
+            <div class="item">
+              <img src="./images/Beats to think to.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>Beats to think to</h4>
+              <p>Focus with melodic techno and tech house.</p>
+            </div>
+
+            <div class="item">
+              <img src="./images/Reading Adventure.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>Reading Adventure</h4>
+              <p>Scores and soundtracks for daring quests, epic...</p>
+            </div>
+
+            <div class="item">
+              <img src="./images/Workday Lounge.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>Workday Lounge</h4>
+              <p>Lounge and chill out music for your workday</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="spotify-playlists">
+          <h2>Sound of India</h2>
+          <div class="list">
+
+
+            <div class="item">
+              <img src="./images/The Sound of Kolkata.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>The Sound of Kolka...</h4>
+              <p>The songs that define, unite and distinguish...</p>
+            </div>
+
+            <div class="item">
+              <img src="./images/The Sound of Delhi.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>The Sound of Delhi...</h4>
+              <p>The songs that define, unite and distinguish...</p>
+            </div>
+
+            <div class="item">
+              <img src="./images/The Sound of Bengaluru.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>The Sound of Ben...</h4>
+              <p>The songs that define, unite and distinguish...</p>
+            </div>
+
+            <div class="item">
+              <img src="./images/The Sound of Mumbai.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>The Sound of Mum...</h4>
+              <p>The songs that define, unite and distinguish...</p>
+            </div>
+
+            <div class="item">
+              <img src="./images/The Sound of Chennai.jpg" />
+              <div class="play">
+                <span class="fa fa-play"></span>
+              </div>
+              <h4>The Sound of Chen...</h4>
+              <p>The songs that define, unite and distinguish...</p>
+            </div>
+          </div>
+
+          <hr>
+        </div>
+      </div>
+
+      <!-- other-2 -->
+      <div class="other-2-container">
+        <header class="header">
+          <div class="section__container header__container" id="home">
+            <h1>Explore the our best and latest songs</h1>
+            <div class="header__form">
+              <form action="/">
+                <div class="input__group">
+                  <label for="destination">Which song do you want to listen</label>
+                  <input type="text" placeholder="Enter Name" />
+                </div>
+                <div class="input__group">
+                  <label for="checkIn">Singer</label>
+                  <input type="text" placeholder="Enter Singer" />
+                </div>
+                <div class="input__group">
+                  <label for="CheckOut">Type</label>
+                  <input type="text" placeholder="Enter Type" />
+                </div>
+                <div class="input__group">
+                  <label for="guests">Year</label>
+                  <input type="text" placeholder="Enter Year" />
+                </div>
+                <button class="btn">Find Song</button>
+              </form>
+            </div>
+          </div>
+        </header>
+        <section class="section__container trending__container" id="trending">
+          <div class="section__header">
+            <h2 class="section__title">Best offers 2024</h2>
+          </div>
+          <div class="trending__grid">
+            <div class="trending__card">
+              <img src="assets/trending-1.jpg" alt="trending" />
+              <h1>Dimand Plan</h1>
+              <p>45% off | 1 Year</p>
+              <div class="trending__details">
+                <div class="price">
+                  <p>From</p>
+                  <h3>$95.50</h3>
+                  <p>*Price varies</p>
+                </div>
+                <div class="trending__ratings">
+                  <div>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-half-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                  <p>4.8 (10)</p>
+                </div>
+              </div>
+              <h5>
+                <span><i class="ri-time-line"></i></span> 1 year
+              </h5>
+              <p>
+                <span><i class="ri-check-line"></i></span> Free Cancellation
+              </p>
+            </div>
+            <div class="trending__card">
+              <img src="assets/trending-2.jpg" alt="trending" />
+              <h1>Super Plan</h1>
+              <p>65% off | 6 Months</p>
+              <div class="trending__details">
+                <div class="price">
+                  <p>From</p>
+                  <h3>$50.50</h3>
+                  <p>*Price varies</p>
+                </div>
+                <div class="trending__ratings">
+                  <div>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-half-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                  <p>4.2 (25)</p>
+                </div>
+              </div>
+              <h5>
+                <span><i class="ri-time-line"></i></span> 6 months
+              </h5>
+              <p>
+                <span><i class="ri-check-line"></i></span> Free Cancellation
+              </p>
+            </div>
+            <div class="trending__card">
+              <img src="assets/trending-3.jpg" alt="trending" />
+              <h1>Basic Plan</h1>
+              <p>25% off | 1 month</p>
+              <div class="trending__details">
+                <div class="price">
+                  <p>From</p>
+                  <h3>$15.00</h3>
+                  <p>*Price varies</p>
+                </div>
+                <div class="trending__ratings">
+                  <div>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-half-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                  <p>4.5 (15)</p>
+                </div>
+              </div>
+              <h5>
+                <span><i class="ri-time-line"></i></span> 1 month
+              </h5>
+              <p>
+                <span><i class="ri-check-line"></i></span> Free Cancellation
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section__container destination__container" id="destination">
+          <div class="section__header">
+            <h2 class="section__title">Top Recommened Playlist</h2>
+          </div>
+          <div class="destination__grid">
+            <div class="destination__card">
+              <img src="assets/destination-1.jpg" alt="destination" />
+              <div class="badge">234</div>
+              <div class="destination__details">
+                <h4>English Songs</h4>
+                <p>Enjoy</p>
+              </div>
+            </div>
+            <div class="destination__card">
+              <img src="assets/destination-2.jpeg" alt="destination" />
+              <div class="badge">125</div>
+              <div class="destination__details">
+                <h4>Hindi Songs</h4>
+                <p>Happiness</p>
+              </div>
+            </div>
+            <div class="destination__card">
+              <img src="assets/destination-3.jpg" alt="destination" />
+              <div class="badge">862</div>
+              <div class="destination__details">
+                <h4>Classic Songs</h4>
+                <p>Fun</p>
+              </div>
+            </div>
+            <div class="destination__card">
+              <img src="assets/destination-4.jpg" alt="destination" />
+              <div class="badge">76</div>
+              <div class="destination__details">
+                <h4>Tunes Songs</h4>
+                <p>Sweet</p>
+              </div>
+            </div>
+            <div class="destination__card">
+              <img src="assets/destination-5.jpg" alt="destination" />
+              <div class="badge">346</div>
+              <div class="destination__details">
+                <h4>Pop Songs</h4>
+                <p>Focus</p>
+              </div>
+            </div>
+            <div class="destination__card">
+              <img src="assets/destination-6.jpg" alt="destination" />
+              <div class="badge">212</div>
+              <div class="destination__details">
+                <h4>Most Liked Songs</h4>
+                <p>Mood Fresh</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="tour">
+          <div class="section__container tour__container">
+            <h4>Enjoy Our Songs Video </h4>
+            <div class="video__container">
+              <video src="assets/video-1.mp4" autoplay loop muted width="100%"></video>
+            </div>
+          </div>
+        </section>
+
+        <section class="section__container client__container" id="client">
+          <div class="section__header">
+            <h2 class="section__title">Clients Feedback</h2>
+          </div>
+          <div class="client__grid">
+            <div class="client__card">
+              <div class="client__card__header">
+                <span><i class="ri-double-quotes-r"></i></span>
+                <div class="ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-half-fill"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, corrupti dolorem ipsum in eaque, vero
+                et
+                laboriosam fuga doloremque quo voluptatum eius, itaque omnis. Vero, quae ab incidunt laboriosam fugiat
+                laboriosam fugiat illum aboriosam fuga doloremque
+              </p>
+              <div class="client__card__footer">
+                <img src="assets/client-1.jpg" alt="client" />
+                <div class="client__details">
+                  <h4>Mike Henderson</h4>
+                  <p>Business Manager & CEO</p>
+                </div>
+              </div>
+            </div>
+            <div class="client__card">
+              <div class="client__card__header">
+                <span><i class="ri-double-quotes-r"></i></span>
+                <div class="ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, corrupti dolorem ipsum in eaque, vero
+                et
+                laboriosam fuga doloremque quo voluptatum eius, itaque omnis. Vero, quae ab incidunt laboriosam fugiat
+                laboriosam fugiat illum aboriosam fuga doloremque
+
+              </p>
+              <div class="client__card__footer">
+                <img src="assets/client-2.jpg" alt="client" />
+                <div class="client__details">
+                  <h4>Paul Harrison</h4>
+                  <p>Director</p>
+                </div>
+              </div>
+            </div>
+            <div class="client__card">
+              <div class="client__card__header">
+                <span><i class="ri-double-quotes-r"></i></span>
+                <div class="ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, corrupti dolorem ipsum in eaque, vero
+                et
+                laboriosam fuga doloremque quo voluptatum eius, itaque omnis. Vero, quae ab incidunt laboriosam fugiat
+                laboriosam fugiat illum aboriosam fuga doloremque
+              </p>
+              <div class="client__card__footer">
+                <img src="assets/client-3.jpg" alt="client" />
+                <div class="client__details">
+                  <h4>John Williams</h4>
+                  <p>Content Writer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="subscribe">
+          <div class="section__container subscribe__container">
+            <h4>Subscribe and be Updated</h4>
+            <form action="/">
+              <input type="text" placeholder="Please enter your email address" />
+              <button class="btn">Subscribe</button>
+            </form>
+          </div>
+        </section>
+
+        <footer>
+          <div class="section__container footer__container">
+            <div class="footer__col">
+              <h5>About Us</h5>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat nemo officiis tempora, quas et soluta
+                obcaecati debitis dicta quia culpa rem consequatur.
+              </p>
+            </div>
+            <div class="footer__col">
+              <h4>Quick Links</h4>
+              <a href="#home">Home</a>
+              <a href="#destination">Songs</a>
+              <a href="#subscribe">Write to Us</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer__col">
+              <h4>Features</h4>
+              <a href="#">Package</a>
+              <a href="#">List of Songs</a>
+              <a href="#">Gallery</a>
+              <a href="#">Plan on Budget</a>
+            </div>
+            <div class="footer__col">
+              <h4>Follow Us</h4>
+              <div class="footer__socials">
+                <span>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                </span>
+                <span>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </span>
+                <span>
+                  <a href="#"><i class="bi bi-instagram"></i></i></a>
+                </span>
+                <span>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bar">
+            Copyright © 2024 Music Website. All rights reserved.
+          </div>
+        </footer>
+      </div>
+
+    </div>
+    <!-- part 3 (bottom) -->
+    <div class="master_play ">
+      <div class="wave" id="wave">
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+      </div>
+      <img src="img/1.jpg" alt="" id="poster_master_play">
+      <h5 id="title" class="masterTitle">Alone
+        <div class="subtitle">Marshmello</div>
+      </h5>
+      <div class="icon">
+        <i class="bi bi-music-note-beamed shuffle">next</i>
+        <i class="bi bi-skip-start-fill" id="back"></i>
+        <i class="bi bi-play-fill" id="masterPlay"></i>
+        <i class="bi bi-skip-end-fill" id="next"></i>
+        <a href="audio/1.mp3" download id="download_music" target="_top"><i class="bi bi-cloud-arrow-down-fill"></i></a>
+      </div>
+      <span id="currentStart">0:00</span>
+      <div class="bar">
+        <input type="range" id="seek" min="0" max="100">
+        <div class="bar2" id="bar2"></div>
+        <div class="dot" id="dot"></div>
+      </div>
+      <span id="currentEnd">2:12</span>
+      <div class="vol">
+        <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+        <input type="range" min="0" max="100" id="vol">
+        <div class="vol_bar" id="vol_bar"></div>
+        <div class="dot" id="vol_dot"></div>
+      </div>
+    </div>
+  </header>
+  <script src="https://kit.fontawesome.com/ef9a692198.js" crossorigin="anonymous"></script>
+  <script src="app.js">
+  </script>
+</body>
+
+</html>
